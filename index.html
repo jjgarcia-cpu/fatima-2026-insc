@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Instituto Superior Nuestra Señora de Fátima · Villa Soldati</title>
-<meta name="description" content="Profesorados y tecnicaturas de nivel superior en Villa Soldati. Título oficial, comunidad marianista, salida laboral real.">
+<title>Inscripción 2027 · Instituto Superior Nuestra Señora de Fátima · Villa Soldati</title>
+<meta name="description" content="Inscripción 2027 abierta. Profesorados y tecnicaturas de nivel superior en Villa Soldati, CABA. Título oficial, horarios y aranceles. Requisitos y cómo inscribirte.">
+<meta property="og:title" content="Inscripción 2027 · Instituto Superior Fátima · Villa Soldati">
+<meta property="og:description" content="4 carreras con título oficial. Inscripción 2027 abierta. Requisitos, horarios y aranceles.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
@@ -237,6 +240,35 @@
     html{ scroll-behavior:auto; }
     .hero{ animation:none; opacity:1; }
   }
+  /* ---------- FAQ ---------- */
+  .faq{
+    background: var(--surface);
+    border: 1px solid var(--line, #E0D2BC);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-top: 12px;
+  }
+  .faq summary{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.02rem;
+    list-style: none;
+  }
+  .faq summary::-webkit-details-marker{ display: none; }
+  .faq summary::after{
+    content: "+";
+    float: right;
+    color: #A67C3D;
+    font-weight: 700;
+  }
+  .faq[open] summary::after{ content: "–"; }
+  .faq p{ margin-top: 12px; margin-bottom: 0; }
+
+  @media (max-width: 560px){
+    .faq{ padding: 14px 16px; }
+    .faq table{ font-size: 0.9rem; }
+  }
+
 </style>
 </head>
 <body>
@@ -266,6 +298,7 @@
       que te conoce por tu nombre.
     </p>
     <div class="hero-badges">
+      <span class="badge"><strong>Inscripción 2027 abierta</strong></span>
       <span class="badge">Red Educativa Marianista</span>
       <span class="badge">A-1486 · título oficial</span>
       <span class="badge">Desde 2011</span>
@@ -274,6 +307,10 @@
       <a class="btn btn-primary" href="https://terciariofatima.quinttos.com/Enrollment/online/inscripciones-2027" target="_blank" rel="noopener">Quiero inscribirme</a>
       <a class="btn btn-outline" href="#carreras">Ver las carreras</a>
     </div>
+    <p class="hero-lede" style="margin-top:18px;font-size:0.98rem;">
+      ¿Todavía tenés dudas? Mirá <a href="#aranceles">cuánto sale y cuándo se cursa</a>
+      o <a href="#requisitos">qué necesitás para inscribirte</a>.
+    </p>
   </section>
 </div>
 
@@ -333,7 +370,8 @@
       <div class="tl-item"><b>2011</b><span>El Terciario da sus primeros pasos en el barrio.</span></div>
       <div class="tl-item"><b>A-1486</b><span>El instituto recibe su denominación oficial.</span></div>
       <div class="tl-item"><b>Hoy</b><span>4 carreras de nivel superior y 432 estudiantes.</span></div>
-      <div class="tl-item"><b>2026</b><span>Nueva cohorte del Profesorado de Nivel Primario.</span></div>
+      <div class="tl-item"><b>2026</b><span>Se abre la cohorte del Profesorado de Nivel Primario.</span></div>
+      <div class="tl-item"><b>2027</b><span>Inscripción abierta para todas las carreras.</span></div>
     </div>
   </section>
 </div>
@@ -370,7 +408,7 @@
       <article class="career highlight">
         <div class="career-top">
           <span class="career-tag">Profesorado</span>
-          <span class="career-new">Primera cohorte · 2026</span>
+          <span class="career-new">Nueva · inscripción 2027</span>
         </div>
         <h3>Educación Primaria</h3>
         <p>Una carrera nueva: formá maestros y maestras con una mirada integral de la enseñanza.</p>
@@ -392,7 +430,7 @@
         Ciclo de Complementación Curricular y recibirte, en dos años y medio, también como
         Profesor/a de Educación Primaria.
       </p>
-      <a class="link-cta" href="https://wa.me/5491152625754" target="_blank" rel="noopener">Consultar por este ciclo →</a>
+      <a class="link-cta" href="https://wa.me/5491152625754?text=Hola%2C%20soy%20profe%20de%20Nivel%20Inicial%20y%20quiero%20consultar%20por%20el%20Ciclo%20de%20Complementaci%C3%B3n%20para%20Primaria." target="_blank" rel="noopener">Consultar por este ciclo →</a>
     </div>
   </section>
 
@@ -432,8 +470,130 @@
     <p class="pullquote">«Educamos personas: en la fe, en comunidad y para el servicio.»</p>
   </section>
 
+  <!-- ============ ARANCELES Y HORARIOS ============ -->
+  <section class="section" id="aranceles">
+    <p class="kicker">Antes de inscribirte</p>
+    <h2>Cuánto sale y cuándo se cursa.</h2>
+    <p class="lede">
+      Acá está todo lo que normalmente se pregunta por WhatsApp. Si algo no te cierra,
+      escribinos y lo vemos juntos.
+    </p>
+
+    <div class="callout" style="margin-top:26px;">
+      <p class="kicker">Aranceles ciclo 2027</p>
+      <p style="font-size:1.55rem;font-weight:700;margin:10px 0 6px;">Matrícula anual: $100.000</p>
+      <p style="margin:0;"><strong>No se cobra cuota mensual.</strong> Es el único pago del año.</p>
+      <p style="margin-top:14px;font-size:0.92rem;">
+        La matrícula no incluye el seguro de práctica ni los materiales de cada carrera.
+        Consultanos por formas de pago en Bedelía.
+      </p>
+    </div>
+
+    <h3 style="margin-top:38px;">Cuándo se cursa</h3>
+    <div class="callout">
+      <p style="font-size:1.15rem;font-weight:600;margin:0;">De 17 a 22 hs · todas las carreras</p>
+      <p style="margin-top:8px;margin-bottom:0;">
+        Un solo turno, pensado para que puedas trabajar y estudiar al mismo tiempo.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ REQUISITOS ============ -->
+  <section class="section" id="requisitos">
+    <p class="kicker">Paso a paso</p>
+    <h2>Qué necesitás para inscribirte.</h2>
+    <p class="lede">
+      Tené esto a mano antes de empezar el formulario: son cinco minutos y no se puede guardar
+      a medias.
+    </p>
+    <div class="chips" style="margin-top:26px;">
+      <div class="chip">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+        </span>
+        <div><strong>Título secundario</strong><small>Original y copia. Si todavía no lo tenés, sirve la constancia de título en trámite.</small></div>
+      </div>
+      <div class="chip">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="11" r="2"/><path d="M14 10h4M14 14h4"/></svg>
+        </span>
+        <div><strong>DNI</strong><small>Original y copia de las dos primeras páginas.</small></div>
+      </div>
+      <div class="chip">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="12" cy="10" r="2.5"/><path d="M7 18c0-2.5 2.2-4 5-4s5 1.5 5 4"/></svg>
+        </span>
+        <div><strong>Fotos 4x4</strong><small>Dos fotos carnet, fondo claro.</small></div>
+      </div>
+      <div class="chip">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 9h16"/><path d="M8 13h5"/></svg>
+        </span>
+        <div><strong>Arancel de matrícula</strong><small>$100.000, se abona al confirmar la inscripción. No hay cuota mensual.</small></div>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:26px;">
+      <p class="kicker">Cómo es el trámite</p>
+      <p>
+        <strong>1.</strong> Completás el formulario online (5 minutos).<br>
+        <strong>2.</strong> Te contactamos por WhatsApp para confirmar tus datos y la carrera elegida.<br>
+        <strong>3.</strong> Presentás la documentación en Secretaría y abonás la matrícula.<br>
+        <strong>4.</strong> Quedás inscripto/a para el ciclo 2027.
+      </p>
+      <p style="margin-top:14px;">
+        <a class="link-cta" href="https://terciariofatima.quinttos.com/Enrollment/online/inscripciones-2027" target="_blank" rel="noopener">Empezar la inscripción →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PREGUNTAS FRECUENTES ============ -->
+  <section class="section" id="preguntas">
+    <p class="kicker">Preguntas frecuentes</p>
+    <h2>Lo que todos nos preguntan.</h2>
+
+    <details class="faq" open>
+      <summary>¿El título tiene validez nacional?</summary>
+      <p>Sí. El Instituto está registrado como A-1486 y sus títulos son oficiales, reconocidos por el Ministerio de Educación de la Nación. Podés ejercer en todo el país.</p>
+    </details>
+
+    <details class="faq">
+      <summary>¿Puedo estudiar y trabajar al mismo tiempo?</summary>
+      <p>Sí, y es lo que hace la mayoría de nuestros estudiantes. Por eso la cursada es en un solo turno y con horarios compatibles con el trabajo. Acá nadie es un número: si tenés un problema de horario, lo hablamos.</p>
+    </details>
+
+    <details class="faq">
+      <summary>¿Necesito tener el secundario terminado para inscribirme?</summary>
+      <p>Para empezar a cursar necesitás el título secundario o la constancia de título en trámite. Si te falta rendir alguna materia, escribinos: hay situaciones que se pueden resolver.</p>
+    </details>
+
+    <details class="faq">
+      <summary>¿Hay examen de ingreso?</summary>
+      <p>No hay examen eliminatorio. Hay un curso de ingreso que te prepara para la cursada y para la lectura y escritura académica.</p>
+    </details>
+
+    <details class="faq">
+      <summary>¿Cuánto tiempo dura la carrera?</summary>
+      <p>Las tecnicaturas en Seguridad e Higiene y en Enfermería duran 3 años. Los profesorados de Nivel Inicial y de Nivel Primario duran 4 años. Si ya sos profe de Inicial, podés sumar el título de Primaria en dos años y medio con el Ciclo de Complementación Curricular.</p>
+    </details>
+
+    <details class="faq">
+      <summary>¿Dónde queda y cómo llego?</summary>
+      <p>En Mariano Acosta 2920, Villa Soldati, CABA. Estamos en el barrio y se llega en colectivo. Podés <a href="#contacto">ver el mapa acá abajo</a> o escribirnos y te explicamos cómo llegar.</p>
+    </details>
+
+    <details class="faq">
+      <summary>Soy la primera de mi familia en estudiar una carrera, ¿hay acompañamiento?</summary>
+      <p>Sí, y es lo que más nos define. Muchos de nuestros estudiantes son la primera generación de su familia en llegar al nivel superior. Hay tutores, docentes que te conocen por tu nombre y una comunidad que sostiene.</p>
+    </details>
+
+    <details class="faq">
+      <summary>¿Puedo visitar el instituto antes de inscribirme?</summary>
+      <p>Claro. Escribinos por WhatsApp y coordinamos una visita. También podés pasar por Secretaría en horario de atención.</p>
+    </details>
+  </section>
+
   <!-- ============ CONTACTO ============ -->
-  <section class="section" style="border-bottom:none;">
+  <section class="section" id="contacto" style="border-bottom:none;">
     <p class="kicker">Contacto</p>
     <h2>El Terciario es para vos.</h2>
     <p class="lede">Escribinos, visitanos o pasá por el barrio: te estamos esperando.</p>
@@ -447,7 +607,8 @@
     </div>
     <dl class="contact-list">
       <div class="contact-row"><dt>Dónde</dt><dd>Mariano Acosta 2920, Villa Soldati</dd></div>
-      <div class="contact-row"><dt>WhatsApp</dt><dd><a href="https://wa.me/5491152625754" target="_blank" rel="noopener">11 5262-5754</a></dd></div>
+      <div class="contact-row"><dt>WhatsApp</dt><dd><a href="https://wa.me/5491152625754?text=Hola%2C%20quiero%20inscribirme%20al%20ciclo%202027.%20%C2%BFC%C3%B3mo%20sigo%3F" target="_blank" rel="noopener">11 5262-5754</a></dd></div>
+      <div class="contact-row"><dt>Email</dt><dd><a href="mailto:bedelia@terciariofatimasoldati.edu.ar">bedelia@terciariofatimasoldati.edu.ar</a></dd></div>
       <div class="contact-row"><dt>Instagram</dt><dd><a href="https://instagram.com/fatimaterciario" target="_blank" rel="noopener">@fatimaterciario</a></dd></div>
     </dl>
   </section>
@@ -457,7 +618,7 @@
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="wrap">
-    <p>© 2026 Instituto Superior Nuestra Señora de Fátima · Título oficial A-1486, reconocido por el Ministerio de Educación de la Nación.</p>
+    <p>© 2026 Instituto Superior Nuestra Señora de Fátima · Título oficial A-1486, reconocido por el Ministerio de Educación de la Nación · Inscripción abierta para el ciclo lectivo 2027.</p>
   </div>
 </footer>
 
@@ -469,6 +630,7 @@
       https://terciariofatima.quinttos.com/Enrollment/online/inscripciones-2027
       Aparece en DOS lugares de este archivo (botón del hero y esta barra fija).
     -->
+    <p style="text-align:center;font-size:0.85rem;margin:0 0 8px;">Inscripción 2027 · son 5 minutos · tené el DNI a mano</p>
     <a class="btn btn-primary" href="https://terciariofatima.quinttos.com/Enrollment/online/inscripciones-2027" target="_blank" rel="noopener">Quiero inscribirme →</a>
   </div>
 </div>
